@@ -70,6 +70,9 @@ public class AccountServiceImpl implements AccountService {
 				userAccount.getFirstName(), userAccount.getLastName(), userAccount.getRoles());
 	}
 
+	
+	// this method was made by myself
+	
 	@Override
 	public UserProfileDto changeRole (String id, UserRegisterDto userRegDto, String auth) {
 		AccountUserCredential credentials = accountConfiguration.tokenDecode(auth);
